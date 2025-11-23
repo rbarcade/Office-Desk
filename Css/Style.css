@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../Images/pexels-jplenio-1103970.jpg');
+    font-family: "Lexend Giga", sans-serif;
+}
+
+header img {
+    display: block;
+    margin: 40px auto 10px auto;
+    height: 150px;
+    transition:  0.25s ease-in-out;
+}
+
+header img:hover{
+    transition: 0.3s;
+    height: 200px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+    transition: padding 0.25s ease-in-out;
+}
+
+.container:hover{
+    padding: 32px;
+    transition: 0.35s;
+}
+
+.title {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    float: left;
+
+}
+
+.input-box {
+    width: 96%;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 12px;
+    border: 3px solid rgb(200, 200, 200);
+    outline: none;
+    transition: 0.35s;
+    margin-bottom: 12px;
+    font-size: small;
+}
+
+.input-box:hover, .input-box:focus{
+    border-color: #19b394;
+    box-shadow: 0 0 5px #19b394;
+    transition: 0.35s;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+.next-btn {
+    background-color: rgb(29, 112, 233);
+    color: white;
+    transition: 0.35s;
+    font-size: 12px;
+}
+
+.next-btn:hover {
+    background-color: rgb(63, 132, 233);
+    color: white;
+}
+
+.back-btn {
+    background-color: rgb(99, 133, 187);
+    margin-top: 15px;
+
+    font-size: small;
+    color: white
+}
+
+.back-btn:hover {
+    background-color: rgb(110, 133, 169);
+    color: white;
+    transition: 0.35s;
+}

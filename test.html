@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Required Input Red Border</title>
+<style>
+  input:invalid:not(:focus) {
+    border-color: red;
+    border-width: 2px;
+  }
+</style>
+</head>
+<body>
+
+  <form>
+    <label for="username">Username (required):</label><br>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
