@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#header{
+    text-align: center;
+    margin-top:100px;
+    font-size: 32px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.fields{
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 600px;
+    height:60px;
+    margin:auto;
+    margin-top: 40px;
+    
+     display: flex;
+  align-items: center;
+  
+}
+.input{
+    border:none;
+   margin-left: 60px;
+   width:300px;
+    font-size: 20px;;
+}
+.btn{
+  margin-left: 650px;
+  margin-top: -60px;
+  width:603px;
+  border: 2px solid rgb(66, 127, 239);
+  background-color: rgb(66, 127, 239);
+  color:white;
+  border-radius: 10px;
+  height:60px;
+  font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.icon{
+    width:35px;
+    height: 35px;
+    margin-top:5px;
+    margin-left:10px;
+      display:inline-block;
+}
+a{
+    line-height: 80px;
+    margin-left:900px;
+    color: rgb(66, 127, 239);
+    font-family:'Times New Roman', Times, serif ;
+    text-decoration: none;
+}
+</style>
+<body background="">
+    <div id="header">
+        Enter Username and Password to Login
+    </div>
+    <div class="fields">
+        <img src="https://www.transparentpng.com/thumb/user/gray-user-profile-icon-png-fP8Q1P.png" class="icon">
+        <input type="text " placeholder="Username" class="input" required>
+    </div>
+    <div class="fields">
+        <img src="https://cdn-icons-png.freepik.com/512/2725/2725281.png" class="icon">
+        <input type="text " placeholder="Password" class="input" required>
+    </div>
+    <a href="Forgot Password." target="blank">Forgot Password</a>
+    <button class="btn"> Login</button>
+</body>
+</html>
