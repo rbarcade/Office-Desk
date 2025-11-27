@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Techolic - Employees</title>
+  <link rel="stylesheet" href="admin_employees.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span>⚙</span>
+      <span>TECHOLIC</span>
+    </div>
+    <nav class="nav">
+      <a href="#">Visitors</a>
+      <a href="#">Department</a>
+      <a class="active" href="#">Employees</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <div class="page-header">
+      <h1 class="page-title">Employees</h1>
+      <button type="button" class="btn-primary">
+        <span>Add Employee</span>
+      </button>
+    </div>
+
+    <!-- Table -->
+    <section class="table-card">
+      <div class="table-wrapper">
+        <div class="table-footer">
+  <div>Showing 1 to 17 of 17 entries</div>
+
+  <div class="pager">
+    <button type="button" disabled>«</button>
+    <button type="button" disabled>‹</button>
+    <button type="button" class="active">1</button>
+    <button type="button" disabled>›</button>
+    <button type="button" disabled>»</button>
+  </div>
+
+  <div class="page-size-select">
+    <span>Rows:</span>
+    <select>
+      <option selected>25</option>
+      <option>50</option>
+      <option>100</option>
+    </select>
+  </div>
+</div>
+
+        <table>
+          <thead>
+            <tr>
+              <th class="sortable">Id</th>
+              <th class="sortable">Employee</th>
+              <th class="sortable">Phone No.</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-label="Id">22</td>
+              <td data-label="Employee">Amit Kumar</td>
+              <td data-label="Phone No.">9779291376</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">23</td>
+              <td data-label="Employee">ANSHUL RANA</td>
+              <td data-label="Phone No.">8544707390</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">17</td>
+              <td data-label="Employee">Ashish</td>
+              <td data-label="Phone No.">9888061002</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">11</td>
+              <td data-label="Employee">Balbir Singh</td>
+              <td data-label="Phone No.">9316697004</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">12</td>
+              <td data-label="Employee">D N Tiwari</td>
+              <td data-label="Phone No.">9988344323</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">1</td>
+              <td data-label="Employee">Govind Singh</td>
+              <td data-label="Phone No.">9988211348</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">9</td>
+              <td data-label="Employee">Imran Khan</td>
+              <td data-label="Phone No.">8437755000</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">15</td>
+              <td data-label="Employee">Jaspal Singh</td>
+              <td data-label="Phone No.">7814141473</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">8</td>
+              <td data-label="Employee">Kamaljeet Singh</td>
+              <td data-label="Phone No.">7696011619</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">10</td>
+              <td data-label="Employee">MD Nishant Garg</td>
+              <td data-label="Phone No.">9814925500</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">18</td>
+              <td data-label="Employee">Parveen Joshi</td>
+              <td data-label="Phone No.">9914066318</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">13</td>
+              <td data-label="Employee">Rajan Pradhan</td>
+              <td data-label="Phone No.">7986992042</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">24</td>
+              <td data-label="Employee">RITU SHARMA</td>
+              <td data-label="Phone No.">9646717007</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">14</td>
+              <td data-label="Employee">Sandeep Rana</td>
+              <td data-label="Phone No.">7814017262</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">21</td>
+              <td data-label="Employee">Sonam Sidhu</td>
+              <td data-label="Phone No.">6284789783</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">16</td>
+              <td data-label="Employee">Surbhi</td>
+              <td data-label="Phone No.">9816633689</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td data-label="Id">20</td>
+              <td data-label="Employee">Trading Desk</td>
+              <td data-label="Phone No.">9435435345</td>
+              <td data-label="Action">
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                    
+                
+      
+        
