@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Techolic Visitors Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="admin_visitors.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">
+      <span>⚙</span>
+      <span>TECHOLIC</span>
+    </div>
+    <nav class="nav">
+      <a class="active" href="#">Visitors</a>
+      <a href="#">Department</a>
+      <a href="#">Employees</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <h1 class="page-title">Visitors</h1>
+
+    <!-- Filters -->
+    <section class="filters-card">
+      <div class="filters-header">Filters</div>
+      <form class="filters-grid">
+        <div class="field">
+          <label for="filter-name">Name</label>
+          <input id="filter-name" type="text" placeholder="Search name" />
+        </div>
+        <div class="field">
+          <label for="filter-meet">To Meet</label>
+          <input id="filter-meet" type="text" placeholder="Person to meet" />
+        </div>
+        <div class="field">
+          <label for="filter-phone">Phone No</label>
+          <input id="filter-phone" type="text" placeholder="Phone number" />
+        </div>
+        <div class="field">
+          <label for="filter-email">Email</label>
+          <input id="filter-email" type="email" placeholder="Email" />
+        </div>
+        <div class="field">
+          <label for="filter-dept">Department</label>
+          <input id="filter-dept" type="text" placeholder="Department" />
+        </div>
+
+        <div class="field date-field">
+  <label for="from-date">Date Range</label>
+  <div class="date-range">
+    <input id="from-date" type="datetime-local" class="date-input" placeholder="dd-mm-yyyy  --:--">
+    <input id="to-date" type="datetime-local" class="date-input" placeholder="dd-mm-yyyy  --:--">
+  </div>
+</div>
+
+
+
+        <button type="submit" class="btn-primary">
+          <span>Find</span>
+          <span class="arrow">➜</span>
+        </button>
+      </form>
+    </section>
+
+    <!-- Table -->
+    <section class="table-card">
+      <div class="table-toolbar">
+        <div class="left">Showing 1 to 4 of 4 entries</div>
+        <div class="quick-search">
+          <span class="quick-search-icon">🔍</span>
+          <input type="text" placeholder="Quick search..." />
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th class="sortable">Name</th>
+              <th class="sortable">To Meet</th>
+              <th class="sortable">Phone No</th>
+              <th class="sortable">Email</th>
+              <th class="sortable">Department</th>
+              <th class="sortable">In Time</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ankush Jain</td>
+              <td>Parveen Joshi</td>
+              <td>9137860025</td>
+              <td>ankush.jain@motilaloswal.com</td>
+              <td><span class="badge">Accounts</span></td>
+              <td>21‑Nov‑2025 02:59 PM</td>
+              <td>
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td>Gagan Deep</td>
+              <td>Govind Singh</td>
+              <td>9988334421</td>
+              <td>deepgags@gmail.com</td>
+              <td><span class="badge">Reception</span></td>
+              <td>29‑Nov‑2025 04:59 PM</td>
+              <td>
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Shirom Lamba</td>
+              <td>Govind Singh</td>
+              <td>9814078990</td>
+              <td>shiromlamba@gmail.com</td>
+              <td><span class="badge">Dealing Room Trading</span></td>
+              <td>26‑Nov‑2025 11:47 AM</td>
+              <td>
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>Mukesh</td>
+              <td>Sandeep Rana</td>
+              <td>9356818224</td>
+              <td>mukeshkatyl75@gmail.com</td>
+              <td><span class="badge">Dealing Room Trading</span></td>
+              <td>22‑Nov‑2025 11:46 AM</td>
+              <td>
+                <div class="actions">
+                  <button class="icon-btn" type="button" title="Edit">✎</button>
+                  <button class="icon-btn icon-btn--danger" type="button" title="Delete">🗑</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-footer">
+        
+
+        <div class="pager">
+          <button type="button" disabled>‹</button>
+          <button type="button" class="active">1</button>
+          <button type="button" disabled>›</button>
+        </div>
+
+        <div class="page-size-select">
+          <span>Rows:</span>
+          <select>
+            <option selected>25</option>
+            <option>50</option>
+            <option>100</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
